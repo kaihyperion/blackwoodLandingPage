@@ -74,22 +74,22 @@ const differentiators = [
 
 const teamMembers = [
   {
-    name: "Sarah Chen",
-    role: "Data Analytics Lead",
-    expertise: "5+ years Tableau & AWS expertise",
-    image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face"
+    name: "Kai Hyperion Yun",
+    role: "Co-Founder (Tech)",
+    expertise: "Dev",
+    image: "https://images.unsplash.com/photo-1708388064278-707e85eaddc0?q=80&w=988&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
-    name: "Mike Rodriguez",
-    role: "AWS Solutions Architect",
-    expertise: "Certified AWS Solutions Architect",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+    name: "Eric Simmons",
+    role: "Co-Founder (Analytics)",
+    expertise: "Data Analytics",
+    image: "https://media.istockphoto.com/id/1440497496/photo/startup-asian-businessman-on-computer-for-data-analysis-and-planning-or-research-creative.jpg?s=1024x1024&w=is&k=20&c=QqQpYIkeeH9ZqsiFuyyz1BEF0udepgx53cBmDMDmZPc="
   },
   {
-    name: "Jennifer Park",
-    role: "Streamlit Developer",
-    expertise: "Python & data visualization specialist",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
+    name: "Kyle Adames",
+    role: "Sales",
+    expertise: "Boy can sell to south east asians",
+    image: "https://plus.unsplash.com/premium_photo-1670552851020-5bfb7d0cadf7?q=80&w=2215&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   }
 ]
 
@@ -279,7 +279,7 @@ export function WhyUs() {
             
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                Data Analytics Experts
+                Founders
               </h2>
               <p className="text-xl text-white/70 max-w-2xl mx-auto">
                 Meet the team that transforms your CSV files into actionable insights

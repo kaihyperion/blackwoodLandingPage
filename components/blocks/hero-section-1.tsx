@@ -68,7 +68,7 @@ export function HeroSection() {
                         <img
                             src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3276&q=80"
                             alt="background"
-                            className="absolute inset-x-0 top-56 -z-20 lg:top-32"
+                            className="absolute inset-x-0 top-0 -z-20"
                             width="3276"
                             height="4095"
                         />
@@ -78,11 +78,18 @@ export function HeroSection() {
                         <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
                             <AnimatedGroup variants={transitionVariants}>
                                 <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-tight">
-                                    Transform Your Data
+                                    Decisions Not Spreadsheets
                                 </h1>
-                                <p className="mx-auto mt-8 max-w-3xl text-balance text-xl text-white/80 mb-12">
-                                    Blackwood transforms your CSV and Excel data into powerful Tableau dashboards. We handle AWS infrastructure, automated data pipelines, and Streamlit visualizations so you can focus on insights, not IT.
+                                <p className='mx-auto mt-8 max-w-3xl text-balance text-xl text-white/80 mb-8'>
+                                    Lead with data | Govern with confidence | Scale with purpose
                                 </p>
+                                <p className="mx-auto mt-8 max-w-3xl text-balance text-xl text-white/80 mb-8 leading-relaxed">
+                                    We belive powerful analytics shouldn't be complicated. <br />
+                                    Blackwood transforms disorganized data into professional-grade analytics. <br />
+                                    Stop wasting time wrestling with CSVs and Excel files. Blackwood converts your raw data into actionable insights through modern Tableau solutions - empowering your business to thrive in a data-driven world.
+                                </p>
+
+
                             </AnimatedGroup>
 
                             <AnimatedGroup
@@ -150,12 +157,12 @@ export function HeroSection() {
                 </section>
 
                 {/* Section 02 - Top Products/Services */}
-                <section className="bg-black py-24">
+                <section className="bg-black py-24 relative">
+                    <div className="absolute top-8 left-8 text-white/30 text-sm font-mono">
+                        02 / Top Services
+                    </div>
                     <div className="mx-auto max-w-7xl px-6">
                         <div className="relative">
-                            <div className="absolute top-0 left-0 text-white/30 text-sm font-mono">
-                                02 / Top Services
-                            </div>
                             <div className="text-center mb-16">
                                 <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                                     Complete Data Analytics Stack
@@ -165,12 +172,12 @@ export function HeroSection() {
                                 </p>
                             </div>
                             
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                                 {[
                                     { name: 'Data Transformation', desc: 'CSV & Excel to clean datasets' },
                                     { name: 'Tableau Dashboards', desc: 'Professional visualizations' },
-                                    { name: 'AWS Infrastructure', desc: 'S3, Lambda, EventBridge' },
-                                    { name: 'Streamlit Apps', desc: 'Interactive data tools' }
+                                    { name: 'AWS Infrastructure', desc: 'S3, Lambda, EventBridge' }
+                                    
                                 ].map((service, index) => (
                                     <div key={index} className="group bg-white/5 rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
                                         <div className="w-12 h-12 bg-white/10 rounded-xl mb-4 flex items-center justify-center">
@@ -186,17 +193,17 @@ export function HeroSection() {
                 </section>
 
                 {/* Section 03 - CTA */}
-                <section className="bg-black py-24">
+                <section className="bg-black py-24 relative">
+                    <div className="absolute top-8 left-8 text-white/30 text-sm font-mono">
+                        03 / CTA
+                    </div>
                     <div className="mx-auto max-w-4xl px-6 text-center">
                         <div className="relative">
-                            <div className="absolute top-0 left-0 text-white/30 text-sm font-mono">
-                                03 / CTA
-                            </div>
                             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                                Ready to Transform Your Data?
+                                Ready for Clarity?
                             </h2>
                             <p className="text-xl text-white/70 mb-8">
-                                Stop struggling with spreadsheets. Let us build you a professional analytics platform that scales with your business.
+                                Stop struggling, let us build you a professional analytics platform that scale with your business.
                             </p>
                             
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -222,26 +229,29 @@ export function HeroSection() {
                     </div>
                 </section>
 
-                {/* Partners Section */}
-                <section className="bg-black pb-16 pt-16 md:pb-32">
-                    <div className="group relative m-auto max-w-5xl px-6">
+                {/* Section 04 - Demo */}
+                <section className="bg-black pb-16 pt-16 md:pb-32 relative">
+                    <div className="absolute top-8 left-8 text-white/30 text-sm font-mono">
+                        04 / Demo
+                    </div>
+                    <div className="group relative mx-auto max-w-7xl px-6">
                         <div className="absolute inset-0 z-10 flex scale-95 items-center justify-center opacity-0 duration-500 group-hover:scale-100 group-hover:opacity-100">
                             <Link
-                                href="/"
+                                href="/why-us"
                                 className="block text-sm duration-150 hover:opacity-75 text-white">
-                                <span>Meet Our Partners</span>
+                                <span>See Our Demo</span>
                                 <ChevronRight className="ml-1 inline-block size-3 text-white" />
                             </Link>
                         </div>
-                        <div className="group-hover:blur-xs mx-auto mt-12 grid max-w-2xl grid-cols-4 gap-x-12 gap-y-8 transition-all duration-500 group-hover:opacity-50 sm:gap-x-16 sm:gap-y-14">
-                            {Array.from({ length: 8 }, (_, i) => (
+                        <div className="group-hover:blur-xs mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 transition-all duration-500 group-hover:opacity-50">
+                            {Array.from({ length: 5 }, (_, i) => (
                                 <div key={i} className="flex">
                                     <img
-                                        className="mx-auto h-6 w-fit invert opacity-60 hover:opacity-100 transition-opacity"
-                                        src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
-                                        alt={`Partner Logo ${i + 1}`}
-                                        height="24"
-                                        width="auto"
+                                        className="mx-auto h-32 w-48 invert opacity-60 hover:opacity-100 transition-opacity object-contain"
+                                        src={`/images/demo/demo-${i + 1}.png`}
+                                        alt={`Demo Screenshot ${i + 1}`}
+                                        height="128"
+                                        width="192"
                                     />
                                 </div>
                             ))}

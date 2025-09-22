@@ -132,13 +132,6 @@ const processSteps = [
   },
   {
     step: "05",
-    title: "Streamlit Applications",
-    description: "Build interactive data exploration tools and custom applications for advanced analytics and data manipulation.",
-    icon: Award,
-    duration: "1-2 weeks"
-  },
-  {
-    step: "06",
     title: "Training & Support",
     description: "Comprehensive training on your new analytics platform plus ongoing support and maintenance to ensure continued success.",
     icon: TrendingUp,
@@ -422,13 +415,12 @@ export function Services() {
                   </div>
                   <div className="flex-1">
                     <div className="bg-gradient-to-br from-white/10 to-white/5 rounded-2xl p-8 border border-white/10">
-                      <div className="aspect-video bg-white/5 rounded-xl flex items-center justify-center">
-                        <div className="text-white/30 text-center">
-                          <div className="w-16 h-16 bg-white/10 rounded-full mx-auto mb-4 flex items-center justify-center">
-                            <step.icon className="w-8 h-8" />
-                          </div>
-                          <p className="text-sm font-mono">Process Visualization</p>
-                        </div>
+                      <div className="aspect-video bg-white/5 rounded-xl overflow-hidden">
+                        <img
+                          src={`/images/services/service-${index + 1}.png`}
+                          alt={`${step.title} Process Visualization`}
+                          className="w-full h-full object-cover"
+                        />
                       </div>
                     </div>
                   </div>

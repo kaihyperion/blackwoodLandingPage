@@ -1,4 +1,4 @@
-import { PricingBasic } from '@/components/blocks/pricing-demo'
+import { ComprehensivePricing } from '@/components/blocks/comprehensive-pricing'
 import { Navigation } from '@/components/Navigation'
 
 export default function PricingPage() {
@@ -24,11 +24,9 @@ export default function PricingPage() {
           02 / Pricing
         </div>
         
-        {/* Centered content */}
-        <div className="relative z-10 flex items-center justify-center min-h-screen pt-20">
-          <div className="w-full max-w-7xl mx-auto px-6">
-            <PricingBasic />
-          </div>
+        {/* Content */}
+        <div className="relative z-10 pt-20 flex items-center justify-center min-h-screen">
+          <ComprehensivePricing />
         </div>
       </main>
     </>
